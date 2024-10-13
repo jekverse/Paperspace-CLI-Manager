@@ -1,12 +1,12 @@
-# Paperspace Gradient CLI Manager
+# Paperspace CLI Manager
 
-Paperspace Gradient CLI Manager adalah solusi bagi pengguna yang merasa terganggu dengan antarmuka UI Paperspace Gradient yang sering lambat dan penuh bug. Dengan manajer berbasis CLI ini, Anda dapat mengelola notebook di Paperspace Gradient secara cepat dan efisien melalui terminal, tanpa harus bergantung pada UI web.
+Paperspace CLI Manager adalah solusi bagi pengguna yang merasa terganggu dengan antarmuka UI Paperspace Gradient yang sering lambat dan penuh bug. Dengan manajer berbasis CLI ini, Anda dapat mengelola notebook di Paperspace Gradient secara cepat dan efisien melalui terminal, tanpa harus bergantung pada UI web.
 
 Dengan repo ini, Anda bisa melakukan berbagai pengaturan dan manajemen notebook langsung dari command line, menghilangkan kebutuhan untuk menunggu antarmuka web yang sering kali lambat.
 
 ## Fitur
 
-Berikut adalah fitur-fitur utama dari `Paperspace Gradient CLI Manager`:
+Berikut adalah fitur-fitur utama dari `Paperspace CLI Manager`:
 
 1. **Membuat notebook baru**: Membuat notebook langsung dari terminal tanpa melalui UI web.
 2. **Menjalankan, menghentikan, dan menghapus notebook**: Kendalikan notebook Anda sepenuhnya dari command line.
@@ -54,5 +54,11 @@ Berikut adalah langkah-langkah instalasi:
    pip install pytz
    pip install python-dotenv
    ```
+5. **Jalankan Paperspace CLI Manager**:
+   Setelah paket sudah dipastikan berhasil di install, jalankan `Paperspace Gradient CLI Manager` dengan perintah berikut:
+   ```bash
+   python main.py
+   ```
+
 
 Setelah langkah-langkah di atas selesai, Anda siap menggunakan `Paperspace Gradient CLI Manager` di lingkungan virtual yang sudah diatur.
