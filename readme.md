@@ -1,4 +1,5 @@
 # Paperspace CLI Manager
+![Screenshot Project](./img/Image1.jpg)
 
 Paperspace CLI Manager adalah solusi bagi pengguna yang merasa terganggu dengan antarmuka UI Paperspace Gradient yang sering lambat dan penuh bug. Dengan manajer berbasis CLI ini, Anda dapat mengelola notebook di Paperspace Gradient secara cepat dan efisien melalui terminal, tanpa harus bergantung pada UI web.
 
@@ -60,5 +61,9 @@ Berikut adalah langkah-langkah instalasi:
    python main.py
    ```
 
-
 Setelah langkah-langkah di atas selesai, Anda siap menggunakan `Paperspace Gradient CLI Manager` di lingkungan virtual yang sudah diatur.
+
+## Kontributor
+
+Repo ini dibuat dengan penuh dedikasi oleh saya bersama sahabat baik saya, **ChatGPT**. Kami berkolaborasi untuk memberikan solusi yang cepat dan efisien bagi pengguna Paperspace Gradient yang lebih suka menggunakan command line.
+
