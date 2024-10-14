@@ -16,9 +16,8 @@ def main_menu():
         print("1. Notebook Setting")
         print("2. Create a new notebook")
         print("3. Available Machine")
-        print("4. Quit")
         
-        user_choice = input("\n[R] Choose an option: ").strip()
+        user_choice = input("\n[Q][R] Choose an option: ").strip()
 
         if user_choice == '1':
             # Prompt user to select a notebook by number
@@ -37,13 +36,14 @@ def main_menu():
         elif user_choice == '2':
             option2_menu()
         elif user_choice == 'r':
+            modules.utils.clear_output()
             continue  # Refresh by continuing the loop
         elif user_choice == '3':
             modules.utils.list_available_gpus(from_main_menu=False)
             print("Press ENTER to return to the main menu.")
             input()
             main_menu()
-        elif user_choice == '4':
+        elif user_choice == 'q':
             print("Exiting the program.")
             break
         else:
@@ -68,7 +68,7 @@ def option1_menu():
             input()
             main_menu()
         elif choice == '1':
-            modules.notebook_setting.start_notebook(notebook_id)
+            modules.notebook_setting.start_notebook(notebook_id,machine_type="Free-A100-80G")
             main_menu()
         elif choice == '2':
             modules.non_stop.running_nonstop(notebook_id)

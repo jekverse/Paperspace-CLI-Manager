@@ -11,6 +11,7 @@ api_key = os.getenv('API_KEY')
 project_id = os.getenv('PROJECT_ID')
 notebooks_client = NotebooksClient(api_key)
 
+
 def create_notebook(machine_type, container , name, command, shutdown_timeout):
     print(f"Membuat Notebook Baru Dengan Template : {name}")
     print(project_id)
@@ -193,3 +194,9 @@ def notebook_data():
     print(f"🔗  Jupyter Lab URL: https://{notebook.id}.{notebook.cluster_id}.paperspacegradient.com/lab?token={notebook.token}")
     print("="*50)
 
+def clear_output():
+    # Cek apakah sistem operasi adalah Windows
+    if os.name == 'nt':
+        os.system('cls')  # Perintah 'cls' untuk Windows
+    else:
+        os.system('clear')  # Perintah 'clear' untuk Linux/Mac
