@@ -59,7 +59,7 @@ Untuk menghindari konflik dependensi, sangat disarankan untuk menggunakan **virt
 5. **Setup Token & Project_ID Paperspace**:
    Setelah semua paket terinstal, jalankan `Masukan Token & Project_ID Paperspace` dengan perintah:
    ```bash
-   python main.py
+   python setup.py
    ```
 6. **Jalankan Paperspace CLI Manager**:
    Jalankan `Paperspace Gradient CLI Manager` dengan perintah:

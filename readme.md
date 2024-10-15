@@ -59,7 +59,7 @@ To avoid dependency conflicts, it is highly recommended to use a **virtual envir
 5. **Set up Paperspace Token & Project_ID**:
    After all packages are installed, run `Enter Paperspace Token & Project_ID` with the command:
    ```bash
-   python main.py
+   python setup.py
    ```
 
 6. **Run Paperspace CLI Manager**:
