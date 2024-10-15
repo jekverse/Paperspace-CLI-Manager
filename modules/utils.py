@@ -1,8 +1,7 @@
 from dotenv import load_dotenv
-import os
-import json, time
 from gradient import NotebooksClient, MachineTypesClient
 from datetime import datetime, timedelta
+import os, json, time
 
 # Memuat file .env
 load_dotenv()
@@ -200,3 +199,5 @@ def clear_output():
         os.system('cls')  # Perintah 'cls' untuk Windows
     else:
         os.system('clear')  # Perintah 'clear' untuk Linux/Mac
+
+
