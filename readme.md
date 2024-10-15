@@ -1,91 +1,94 @@
 # Paperspace CLI Manager
-![Screenshot Project](./img/Image1.jpg)
+![Project Screenshot](./img/Image1.jpg)
 
-**Paperspace CLI Manager** adalah solusi ideal bagi pengguna yang merasa terganggu dengan antarmuka UI Paperspace Gradient yang lambat dan sering penuh bug. Dengan manajer berbasis CLI ini, Anda dapat mengelola notebook di Paperspace Gradient secara cepat dan efisien melalui terminal, tanpa harus bergantung pada UI web.
+[English](readme.md) | [Bahasa Indonesia](readme_ID.md)
 
-Dengan repo ini, Anda dapat melakukan berbagai pengaturan dan manajemen notebook langsung dari command line, menghilangkan kebutuhan untuk menunggu antarmuka web yang sering kali lambat.
+**Paperspace CLI Manager** is the ideal solution for users frustrated with the slow and often buggy Paperspace Gradient UI. This CLI-based manager allows you to manage your Paperspace Gradient notebooks quickly and efficiently through the terminal, eliminating the need to rely on the web UI.
 
-## Fitur
+With this repository, you can handle various notebook configurations and management directly from the command line, removing the need to wait for the often sluggish web interface.
 
-Berikut adalah fitur-fitur utama dari **Paperspace CLI Manager**:
+## Features
 
-1. **Membuat notebook baru**: Buat notebook langsung dari terminal tanpa melalui UI web.
-2. **Menjalankan, menghentikan, dan menghapus notebook**: Kendalikan notebook Anda sepenuhnya dari command line.
-3. **Melihat ketersediaan mesin**: Cek ketersediaan GPU atau mesin lain secara real-time dan cepat.
-4. **Melihat detail notebook**: Dapatkan informasi mendetail mengenai notebook yang sedang Anda kelola.
+Here are the main features of **Paperspace CLI Manager**:
 
-## Fitur Unggulan
+1. **Create new notebooks**: Create notebooks directly from the terminal without using the web UI.
+2. **Start, stop, and delete notebooks**: Fully control your notebooks from the command line.
+3. **Check machine availability**: Quickly and in real-time check GPU or other machine availability.
+4. **View notebook details**: Get detailed information about the notebooks you're managing.
 
-Selain fungsi dasar di atas, repo ini juga memiliki fitur unggulan yang tidak tersedia di antarmuka web Paperspace Gradient:
+## Key Features
 
-1. **Mengatasi batasan sesi notebook 6 jam**: Secara otomatis memantau notebook dan menyalakan kembali jika mati karena mencapai batas waktu 6 jam.
-2. **Otomatis memeriksa ketersediaan GPU**: Jika GPU yang diinginkan tidak tersedia, skrip ini akan memeriksa ketersediaan setiap 30 detik hingga GPU tersedia, menghilangkan kebutuhan untuk pengecekan manual.
+Beyond the basic functionalities, this repository also includes advanced features not available in the Paperspace Gradient web interface:
 
-Repo ini akan terus dikembangkan dengan berbagai fitur tambahan di masa mendatang!
+1. **Bypass the 6-hour notebook session limit**: Automatically monitor and restart notebooks if they stop due to reaching the 6-hour time limit.
+2. **Automatically check GPU availability**: If the desired GPU is unavailable, this script will check every 30 seconds until one becomes available, eliminating the need for manual checks.
 
-## Instalasi
+This repository will continue to be developed with additional features in the future!
 
-### Menggunakan Virtual Environment
+## Installation
 
-Untuk menghindari konflik dependensi, sangat disarankan untuk menggunakan **virtual environment (venv)** pada Python. Pastikan Anda menggunakan **Python versi 3.7** sebelum melanjutkan.
+### Using a Virtual Environment
 
-1. **Pastikan Python 3.7 sudah terinstal**:
-   Jika belum, silakan unduh dan instal Python versi 3.7 dari [python.org](https://www.python.org/downloads/release/python-370/).
+To avoid dependency conflicts, it is highly recommended to use a **virtual environment (venv)** in Python. Make sure you're using **Python version 3.7** before proceeding.
 
-2. **Buat virtual environment**:
-   Buat virtual environment dengan Python 3.7 untuk mencegah konflik dependensi:
+1. **Ensure Python 3.7 is installed**:
+   If not, download and install Python 3.7 from [python.org](https://www.python.org/downloads/release/python-370/).
+
+2. **Create a virtual environment**:
+   Create a virtual environment with Python 3.7 to prevent dependency conflicts:
    ```bash
    python3.7 -m venv venv
    ```
 
-3. **Aktifkan virtual environment**:
-   - Di macOS/Linux:
+3. **Activate the virtual environment**:
+   - On macOS/Linux:
      ```bash
      source venv/bin/activate
      ```
-   - Di Windows:
+   - On Windows:
      ```bash
      .\venv\Scripts\activate
      ```
 
-4. **Instal paket yang diperlukan**:
-   Setelah virtual environment aktif, instal paket yang dibutuhkan dengan perintah:
+4. **Install required packages**:
+   After activating the virtual environment, install the necessary packages with:
    ```bash
    pip install -r requirements.txt
    ```
 
-5. **Setup Token & Project_ID Paperspace**:
-   Setelah semua paket terinstal, jalankan `Masukan Token & Project_ID Paperspace` dengan perintah:
-   ```bash
-   python main.py
-   ```
-6. **Jalankan Paperspace CLI Manager**:
-   Jalankan `Paperspace Gradient CLI Manager` dengan perintah:
+5. **Set up Paperspace Token & Project_ID**:
+   After all packages are installed, run `Enter Paperspace Token & Project_ID` with the command:
    ```bash
    python main.py
    ```
 
-### Menggunakan Docker
+6. **Run Paperspace CLI Manager**:
+   Run `Paperspace Gradient CLI Manager` with:
+   ```bash
+   python main.py
+   ```
 
-Untuk penggunaan yang lebih mudah, Anda juga dapat menjalankan **Paperspace CLI Manager** menggunakan Docker. Berikut adalah langkah-langkahnya:
+### Using Docker
 
-1. **Pastikan Docker sudah terinstal di komputer Anda**.
-2. **Jalankan setup.py**:
+For a simpler setup, you can also run **Paperspace CLI Manager** using Docker. Here are the steps:
+
+1. **Ensure Docker is installed on your computer**.
+2. **Run setup.py**:
    ```bash
    python3 setup.py
    ```
-3. **Build Docker image**:
+3. **Build the Docker image**:
    ```bash
    docker build -t paperspace-cli-manager .
    ```
-   Tunggu hingga proses build selesai.
-4. **Jalankan dengan Docker**:
+   Wait for the build process to complete.
+4. **Run with Docker**:
    ```bash
    docker run -it --rm paperspace-cli-manager
    ```
 
-Setelah langkah-langkah di atas selesai, Anda siap menggunakan **Paperspace Gradient CLI Manager** di lingkungan yang telah Anda atur.
+After completing the steps above, you're ready to use **Paperspace Gradient CLI Manager** in your configured environment.
 
-## Kontributor
+## Contributors
 
-Repo ini dibuat dengan dedikasi oleh saya dan sahabat baik saya, **ChatGPT**. Kami berkolaborasi untuk memberikan solusi cepat dan efisien bagi pengguna Paperspace Gradient yang lebih menyukai penggunaan command line.
+This repository was created with dedication by myself and my good friend, **ChatGPT**. We collaborated to provide a fast and efficient solution for Paperspace Gradient users who prefer command-line usage.
