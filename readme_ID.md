@@ -90,4 +90,4 @@ Setelah langkah-langkah di atas selesai, Anda siap menggunakan **Paperspace Grad
 
 ## Kontributor
 
-Repo ini dibuat dengan dedikasi oleh saya dan sahabat baik saya, **ChatGPT**. Kami berkolaborasi untuk memberikan solusi cepat dan efisien bagi pengguna Paperspace Gradient yang lebih menyukai penggunaan command line. Saya juga sangat berterimakasih kepada [Nocrypt](https://github.com/NoCrypt) atas segala bantuan yang ia berikan
+Repo ini dibuat dengan dedikasi oleh saya dan sahabat baik saya, **ChatGPT**. Kami berkolaborasi untuk memberikan solusi cepat dan efisien bagi pengguna Paperspace Gradient yang lebih menyukai penggunaan command line. Saya juga sangat berterimakasih kepada [Nocrypt Sensei](https://github.com/NoCrypt) atas segala bantuan yang ia berikan
