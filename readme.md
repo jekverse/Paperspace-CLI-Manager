@@ -91,4 +91,4 @@ After completing the steps above, you're ready to use **Paperspace Gradient CLI 
 
 ## Contributors
 
-This repository was created with dedication by myself and my BestFriend, **ChatGPT**. We collaborated to provide a fast and efficient solution for Paperspace Gradient users who prefer command-line usage.
+"This repository was created with dedication by me and my BestFriend, **ChatGPT**. We collaborated to provide a fast and efficient solution for Paperspace Gradient users who prefer using the command line. I am also deeply grateful to [Nocrypt Sensei](https://github.com/NoCrypt) for all the help and support he has provided."
