@@ -42,6 +42,7 @@ def main_menu():
             modules.utils.list_available_gpus(from_main_menu=False)
             print("Press ENTER to return to the main menu.")
             input()
+            modules.utils.clear_output()
             main_menu()
         elif user_choice == 'q':
             print("Exiting the program.")
@@ -69,14 +70,17 @@ def option1_menu():
             main_menu()
         elif choice == '1':
             modules.notebook_setting.start_notebook(notebook_id,machine_type="Free-A100-80G")
+            modules.utils.clear_output()
             main_menu()
         elif choice == '2':
             modules.non_stop.running_nonstop(notebook_id)
         elif choice == '3':
             modules.notebook_setting.stoping_notebook(notebook_id)
+            modules.utils.clear_output()
             main_menu()
         elif choice == '4':
             modules.notebook_setting.delete_notebook(notebook_id)
+            modules.utils.clear_output()
             main_menu()
         else:
             print("Pilihan tidak valid, coba lagi.")
@@ -98,10 +102,9 @@ def option2_menu():
         pilihan = input("Masukkan pilihan Anda (1/2/3): ")
 
         if pilihan == '1':
-            modules.template.default()  # Panggil fungsi default setting
-            modules.utils.create_notebook(machine_type, container , name, command, shutdown_timeout)  # Panggil fungsi untuk membuat notebook
+            machine_type, container , name, command, shutdown_timeout = modules.template.default()
+            modules.utils.create_notebook(machine_type, container , name, command, shutdown_timeout)
             main_menu()
-
         elif pilihan == '2':
             print("Anda memilih Template. Pilih sub-opsi berikut:")
             print("1. ComfyUI")
@@ -113,14 +116,17 @@ def option2_menu():
             if sub_pilihan == '1':
                 machine_type, container , name, command, shutdown_timeout = modules.template.comfyui()
                 modules.utils.create_notebook(machine_type, container , name, command, shutdown_timeout)
+                modules.utils.clear_output()
                 main_menu()
             elif sub_pilihan == '2':
                 machine_type, container , name, command, shutdown_timeout = modules.template.forge()
                 modules.utils.create_notebook(machine_type, container , name, command, shutdown_timeout)
+                modules.utils.clear_output()                
                 main_menu()
             elif sub_pilihan == '3':
                 machine_type, container , name, command, shutdown_timeout = modules.template.fooocus()
                 modules.utils.create_notebook(machine_type, container , name, command, shutdown_timeout)
+                modules.utils.clear_output()
                 main_menu()
             else:
                 print("Pilihan tidak valid, coba lagi.")
@@ -133,10 +139,12 @@ def option2_menu():
             # Tambahkan logika untuk custom setting di sini
         else:
             print("Pilihan tidak valid, coba lagi.")
+            modules.utils.clear_output()
             option2_menu()
 
     except KeyboardInterrupt:
         print("\nKembali ke menu utama...")
+        modules.utils.clear_output()
         main_menu()
 
 if __name__ == "__main__":

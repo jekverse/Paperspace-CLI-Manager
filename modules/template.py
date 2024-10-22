@@ -2,9 +2,10 @@
 def default():
     machine_type = "Free-A4000"
     container = "paperspace/gradient-base:pt211-tf215-cudatk120-py311-20240202"
+    shutdown_timeout="6" 
     name = "default"
     command = "PIP_DISABLE_PIP_VERSION_CHECK=1 jupyter lab --allow-root --ip=0.0.0.0 --no-browser --ServerApp.trust_xheaders=True --ServerApp.disable_check_xsrf=False --ServerApp.allow_remote_access=True --ServerApp.allow_origin='*' --ServerApp.allow_credentials=True"
-    return machine_type, container, name, command
+    return machine_type, container , name, command, shutdown_timeout
 
 def comfyui():
     machine_type = "Free-A4000"
